@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>0.1</title>
+	<link rel="stylesheet" href="lib/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet"  href="css/ucb.css" />
+	<!--<link rel="stylesheet"  href="css/start/style.css" />-->
+	
+	<script src="lib/jquery-2.0.3.min.js"></script>
+	<script src="lib/jquery.mobile-1.3.2.min.js"></script>
+	<script src="lib/jquery.mobile.swipe-1.1.0.js"></script>
+	<script src="lib/jquery.mobile.doubtap-1.0.0.js"></script>
+	<script type="text/javascript" src="lib/global.js"></script>
+	<script type="text/javascript" src="lib/swiper.js"></script>
+	
+</head>
+<body class="ui-overlay-c">
+
+	<div id="wrapper"ontouchmove="touchMove(event);">
+	<div class="topleft"></div>
+	<div class="logo_bayer"></div>
+	
+	<div class="arcs"></div>
+	<div class="bottom_right"></div>
+		
+		
+		<div class="start p0-0" data-role="page">
+			<link rel="stylesheet" href="0.0/style.css" />
+			<div id="content">
+			
+				
+				
+				<div class="tap1"></div>
+				<div class="tap2"></div>
+				
+				<div class="ball"></div>
+						
+				<div class="sternchen"><p class="yellow">*</p></div>
+				<div class="footnote">
+					<p class="yellow">Nexavar<sup>®</sup> verlängerte gegenüber Placebo und gegenüber<br>Temsirolimus das Gesamtüberleben und ist damit die einzige<br>in einer Phase-III-Studie gezeigte .Substanz mit OS-Vorteil. </p>
+					
+					<p class="white">Nexavar<sup>®</sup> ist angezeigt zur Behandlung von Patienten mit<br>fortgeschrittenem Nierenzellkarzinom, bei denen eine vorherige<br>Interferon-alpha- oder Interleukin-2-basierte Therapie<br>versagt hat oder die für solch eine<br>Therapie nicht geeignet sind.</p>
+				</div>
+			</div>
+			<div class="background"></div>
+			
+			<div class="button1"></div>
+			<div class="button2"></div>
+			
+	</div>
+
+		<div id="footer" class="white" data-role="footer" data-id="foo1">
+			<p class="footnote">
+				Nexavar<sup>®</sup> ist angezeigt zur Behandlung von Patienten mit fortgeschrittenem Nierenzellkarzinom, bei denen eine vorherige Interferon-alpha- oder Interleukin-2-basierte Therapie versagt hat oder die für solch eine Therapie nicht geeignet sind.
+			</p>
+			
+<script>
+
+	//DAS WIRD NUR GANZ AM ANFANG AUSGEFÜHRT
+	var activeButton=$('#nav .active');
+
+	var prefix='';
+
+	
+	
+</script>			
+
+<script>  
+
+
+	$(".tap1").click( function(){
+			$(".background").addClass("show_background_left");
+			$(".ball").addClass("show_ball_left");
+			$(".button2").addClass("button2_left");
+			$(".button1").addClass("button1_left");
+			
+			/*
+			$(".ball").removeClass("show_ball_right").css("-webkit-mask-position", "top");
+			$(".background").removeClass("show_background_right");
+			$(".button2").removeClass("button2_right");
+			$(".button1").removeClass("button1_right");
+			*/
+		});
+		
+		
+	$(".tap2").click( function(){
+			$(".background").addClass("show_background_right");
+			$(".ball").addClass("show_ball_right");
+			$(".button2").addClass("button2_right");
+			$(".button1").addClass("button1_right");
+			
+			/*
+			$(".ball").removeClass("show_ball_left").css("-webkit-mask-position", "top");
+			$(".background").removeClass("show_background_left");
+			$(".button2").removeClass("button2_left");
+			$(".button1").removeClass("button1_left");
+			*/		
+		});
+
+
+
+	//alert('HALLO');
+	
+	$(document).on('pageinit',function(e){
+	
+//alert('INIT');
+
+	});
+	
+	$(document).on('pageshow',function(e){
+
+		//Wenn es kein id="slide" gibt, dann sind wir im index
+		if($('.slide').attr('class')==undefined) {
+			prefix='';
+		} else prefix='../';
+
+		navigation();
+		
+		var visible = false;
+		showSourcesPopup()
+	
+	});
+	
+	
+
+	//alert('O');
+	$('#xxx').on('click',function(Event){
+ 			alert('click');
+ 			
+ 			});
+
+	
+</script>
+
+</div>
+</div>
+
+
+</body>
+</html>

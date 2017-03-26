@@ -1,0 +1,326 @@
+#footer, #header, .logo {
+	display: none;
+}
+
+.content {
+	position: absolute;
+	z-index: 100;
+}
+
+.background {
+	background-attachment: fixed !important;
+	background: url(../media/chart-0_poolTable.png) no-repeat;
+	width: 1024px;
+	height: 768px;
+	position: absolute;
+	z-index: 0;
+}
+
+
+.topleft {
+	
+	position:absolute;
+	background: url(../media/chart-0_topLeft.png) no-repeat;
+	top:0;
+	left:0;
+	width:266px;
+	height:187px;
+	z-index:1000;
+}
+
+
+.logo_bayer {
+	background: url(../media/chart-0_logo.png) no-repeat;
+	position:absolute;
+	top:20px;
+	right:30px;
+	width:72px;
+	height:74px;
+	z-index:1100;
+}
+
+
+.button1 {
+	background: url(../media/chart-0_button1.png) no-repeat;
+	position:absolute;
+	top:130px;
+	left:30px;
+	width:270px;
+	height:103px;
+	z-index:1300;
+	-webkit-transition: all 1.7s linear;
+}
+
+
+.button2 {
+	background: url(../media/chart-0_button2.png) no-repeat;
+	position:absolute;
+	top:130px;
+	left:390px;
+	width:270px;
+	height:103px;
+	z-index:1300;
+	-webkit-transition: all 1.7s linear;
+}
+
+
+.ball {
+	background: url(../media/chart-0_ball.png) no-repeat;
+	position:absolute;
+	top:340px;
+	left:250px;
+	width:209px;
+	height:237px;
+	z-index:1400;
+  -webkit-transition: all 1.5s ease-out;
+}
+
+
+.bottom_right {
+	background: url(../media/chart-0_bottomRight.png) no-repeat;
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:756px;
+	height:294px;
+	z-index:1100;
+}
+
+.arcs {
+	background: url(../media/chart-0_arcs.png) no-repeat;
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:920px;
+	height:768px;
+	z-index:1000;
+  overflow:hidden;
+}
+
+
+.footnote {
+	position: absolute;
+	z-index: 1200;
+	bottom:22px;
+	left:22px;
+}
+
+.sternchen {
+	position: absolute;
+	z-index: 1200;
+	bottom:155px;
+	left:14px;
+}
+
+.yellow {
+	color:#c3a844;
+	font-size:14px;
+}
+
+.white {
+	color:white;
+	font-size:14px;
+	margin-top:15px;
+}
+
+.tap1 {
+	border:yellow 1px solid;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:360px;
+	left:140px;
+	z-index:1400;
+}
+
+
+
+.tap2 {
+	border:white 1px solid;
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:360px;
+	left:480px;
+	z-index:1400;
+}
+
+
+.show_background_left {
+	
+	-webkit-transform-origin: 50px 240px;
+	
+	-webkit-animation-name: background_left;
+	-webkit-animation-duration: 1.7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	
+}
+
+
+@-webkit-keyframes 'background_left' {
+from {
+  -webkit-transform: scale(1.0);
+}
+ 
+to {
+  -webkit-transform: scale(2.5);
+}
+}
+
+
+.button1_left {
+	left:200px;
+	-webkit-transform: scale(1.2);
+}
+
+.button2_left {
+	
+	-webkit-animation-name: button2_left;
+	-webkit-animation-duration: 1.6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+	opacity:0.0;	
+}
+
+
+@-webkit-keyframes 'button2_left' {
+from {
+  left:390px;
+  -webkit-transform: scale(1.0);
+  z-index:900;
+  }
+to {
+  left:1000px;
+  -webkit-transform: scale(1.0);
+  z-index:900;
+  }
+}
+
+
+
+.show_background_right {
+	
+	-webkit-transform-origin: 640px 240px;
+	
+	-webkit-animation-name: background_right;
+	-webkit-animation-duration: 1.7s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;	
+}
+
+
+@-webkit-keyframes 'background_right' {
+from {
+  -webkit-transform: scale(1.0);
+  }
+to {
+  -webkit-transform: scale(2.5);
+  }
+}
+
+.button2_right {
+	left:210px;
+	-webkit-transform: scale(1.2);
+}
+
+.button1_right {
+	
+	-webkit-animation-name: button1_right;
+	-webkit-animation-duration: 1.6s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-fill-mode: forwards;
+  opacity:0.0;
+}
+
+@-webkit-keyframes 'button1_right' {
+from {
+  left:30px;
+  -webkit-transform: scale(1.0);
+}
+ 
+to {
+  left:-1000px;
+  -webkit-transform: scale(1.0);
+}
+}
+
+
+
+.show_ball_left {
+top:210px;
+left:232px;
+-webkit-transform: scale(0.3);
+-webkit-animation-name: show_ball_left;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 1.6s;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes 'show_ball_left' {
+from {
+  top:210px;
+  left:232px;
+  background: url(../media/chart-0_ball.png) 0px 0px;
+}
+
+8% {
+  top:218px;
+  left:242px;
+  background: url(../media/chart-0_ball.png) 0px 0px;
+}
+
+98% {
+  top:218px;
+  left:242px;
+  background: url(../media/chart-0_ball.png) 0px 230px;
+}
+ 
+to {
+  top:218px;
+  left:242px;
+  background: url(../media/chart-0_ball.png) 0px 280px;
+}
+}
+
+
+
+.show_ball_right {
+top:206px;
+left:242px;
+-webkit-transform: scale(0.3);
+-webkit-animation-name: show_ball_right;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-delay: 1.6s;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes 'show_ball_right' {
+from {
+  top:206px;
+  left:242px;
+  background: url(../media/chart-0_ball.png) 0px 0px;
+}
+
+8% {
+  top:214px;
+  left:248px;
+  background: url(../media/chart-0_ball.png) 0px 0px;
+}
+
+98% {
+  top:214px;
+  left:248px;
+  background: url(../media/chart-0_ball.png) 0px 230px;
+}
+ 
+to {
+  top:214px;
+  left:248px;
+  background: url(../media/chart-0_ball.png) 0px 280px;
+}
+}
